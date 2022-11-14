@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    
+    min-height: 900px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 13, 54, 0.7),rgba(0, 6, 34, 0.7)), url(images/homepic.jpg);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+display: flex;
+padding: 25px;
+justify-content: space-between;
+align-items: center;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+.nav-links ul li a{
+color: rgb(192, 226, 255);
+text-decoration: none
+}
+.nav-links{
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: rgb(167, 237, 237);
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    transition: 1.5s;
+}
+.data{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(219, 249, 249);
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.data h1{
+    font-size: 60px;
+}
+.data p{
+    padding: 15px;
+    font-size: 15px;
+}
+.visitbutton{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: .5px solid rgb(172, 255, 255);
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+.visitbutton:hover{
+    color: rgb(2, 1, 56);
+    border: 1px solid rgb(195, 248, 248);
+    background-color: rgb(229, 251, 244);
+    transition: 1.5s;
+
+}
+.intro-courses{
+    
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-image:linear-gradient(rgba(220, 240, 255, 0.7),rgba(181, 224, 252, 0.5));
+    padding: 20px 0px;
+   
+}
+.courses1{
+    padding: 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 30px;
+}
+.griditem1{
+    margin: 0px;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 5%;
+   padding: 20px;
+   height: 200px;
+   background-image: linear-gradient(rgba(236, 247, 255, 0.7),rgba(94, 187, 253, 0.8));
+   
+}
+.griditem1 h3{
+    padding: 10px;
+}
+.griditem1 p{
+    padding: 20px;
+}
+.intro-courses p{
+    font-size: 15px;
+}
+.intro-courses h2{
+    font-size: 35px;
+}
+.global{
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 20px;
+    min-height: 425px;
+    background-image: linear-gradient(rgba(181, 224, 252, 0.5),rgba(220, 240, 255, 0.7) );
+
+}
+.global h2{
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(26, 66, 66);
+    
+}
+.contact-us-img{
+    border: 0.1px solid white;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/students1.jpg);
+    min-height: 250px;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    
+}
+.griditem1:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+.button2{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(16, 48, 48);
+    padding: 8px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+.button2:hover{
+    
+    color: black;
+    background-color: rgb(121, 157, 161);
+    transition: 1.5s;
+}
+.contact-us-img h3{
+    font-variant: small-caps;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(219, 249, 249);
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.global h5{
+    margin-top: 15px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(26, 66, 66);
+}
+.global p{
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+@media(max-width:700px) {
+    .data h1{
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .courses1{
+        grid-template-columns: repeat(1,1fr);
+            }
+                
+    
+}
+
+    
